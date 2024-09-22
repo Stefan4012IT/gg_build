@@ -1,0 +1,26 @@
+.game-page {
+    .game-page__content {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+  
+      .tokens-section {
+        flex: 1;
+  
+        h2 {
+          font-size: 2rem;
+          margin-bottom: 20px;
+          color: #333;
+          text-align: center;
+        }
+  
+        .tokens-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: 20px;
+        }
+      }
+    }
+  }

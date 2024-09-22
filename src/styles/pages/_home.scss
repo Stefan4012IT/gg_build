@@ -1,0 +1,64 @@
+// src/styles/pages/Home.scss
+
+.home-page {
+  .hero-slider {
+    background-image: url('https://placehold.co/1920x400/000000/FFFFFF/png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+
+    h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+  }
+
+  .games-tabs {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+
+      .tab-button {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        font-size: 1rem;
+        margin: 0 5px;
+        border-radius: 4px;
+
+        &:hover {
+          background-color: #e2e6ea;
+        }
+
+        &.active {
+          background-color: #007bff;
+          color: #ffffff;
+          border-color: #007bff;
+        }
+      }
+    }
+  }
+
+  .games-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+  }
+}

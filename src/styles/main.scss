@@ -1,0 +1,21 @@
+// Base styles
+@import 'base/base';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// Components
+@import 'components/button';
+@import 'components/card';
+@import 'components/Game';
+@import 'components/GameCard';
+@import 'components/GameHeader';
+@import 'components/GameProfileImage';
+@import 'components/sidebar';
+@import 'components/TokenCard';
+@import 'components/CartModal';
+
+// Pages
+@import 'pages/home';
+@import 'pages/game';

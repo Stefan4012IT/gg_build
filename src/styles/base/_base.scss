@@ -1,0 +1,71 @@
+/* Resetovanje podrazumevanih stilova preglednika */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Osnovni stilovi za HTML i telo stranice */
+html {
+  font-size: 16px; 
+  scroll-behavior: smooth; 
+}
+
+body {
+  font-family: 'Arial', sans-serif; 
+  line-height: 1.6;
+  color: #333; 
+  background-color: #fff; 
+}
+
+/* Uklanjanje podrazumevanih stilova za liste */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Uklanjanje podrazumevanih stilova za linkove */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Resetovanje stilova za slike */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Resetovanje stilova za tabele */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Resetovanje stilova za forme */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+/* Dodavanje osnovnih klasa (opciono) */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}

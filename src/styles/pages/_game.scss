@@ -1,0 +1,33 @@
+// src/styles/pages/Game.scss
+
+.game-page {
+    .game-page__content {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+  
+      .sidebar {
+        flex: 0 0 250px;
+      }
+  
+      .tokens-section {
+        flex: 1;
+  
+        h2 {
+          font-size: 2rem;
+          margin-bottom: 20px;
+          color: #333333;
+          text-align: center;
+        }
+  
+        .tokens-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 20px;
+        }
+      }
+    }
+  }
+  
